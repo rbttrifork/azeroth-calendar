@@ -24,13 +24,13 @@ const raidResets = {
     name: "Onyxia's Lair",
     resetDays: 5, // 5-day reset (resets on Monday and Thursday)
     color: '#C41F3B', // Red
-    thumbnail: 'https://i.imgur.com/pKFMK0O.png' // Onyxia icon
+    thumbnail: 'https://wow.zamimg.com/uploads/screenshots/normal/157191.jpg'
   },
   mc: {
     name: "Molten Core",
     resetDays: 7, // 7-day reset (resets weekly)
     color: '#FF8000', // Orange
-    thumbnail: 'https://i.imgur.com/2kL7FQJ.png' // Molten Core icon
+    thumbnail: 'https://copperice.co.uk/wp-content/uploads/2020/06/wow-molten-core.jpg'
   },
   bwl: {
     name: "Blackwing Lair",
@@ -219,7 +219,7 @@ function sendRaidResetInfo(message, raidCommand) {
         { name: 'Time Until Reset', value: `${nextReset.fromNow()}` },
         { name: 'Reset Cycle', value: `${raid.resetDays} days` }
       )
-      .setFooter({ text: 'Classic WoW Guild Bot' })
+      .setFooter({ text: 'AzerothCalendar | made by lite' })
       .setTimestamp();
     
     console.log('Sending embed message...');
